@@ -1,0 +1,23 @@
+group 'com.epam.evgeniibaibakov'
+version '1.0-SNAPSHOT'
+
+subprojects {
+    apply plugin: 'java'
+    sourceCompatibility = 1.8
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        compile 'org.springframework:spring-core:+',
+                'org.springframework:spring-beans:+',
+                'org.springframework:spring-context:+'
+
+        testCompile 'junit:junit:4.12',
+                'org.springframework:spring-test:+',
+                'org.springframework:spring-core:+',
+                'org.springframework:spring-beans:+',
+                'org.springframework:spring-context:+'
+    }
+}
